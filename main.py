@@ -26,16 +26,15 @@ class DrawFigures:
             'cross' : self.draw_cross
         }
         figures[figure](size)
-      
     def draw_square(self,size):
-        for el in range(size):
-            for el in range(size):
+        for _ in range(size):
+            for _ in range(size):
                 print('# ',end = '')
             print('')
 
     def draw_square_hollow(self,size):
         print('#' * size)
-        for el in range(size):
+        for _ in range(size):
             print('#' + (' ' * (size - 2)) + '#')
         print('#' * size)
 
@@ -47,11 +46,11 @@ class DrawFigures:
             print('')
 
     def draw_cross(self, size):
-        for el in range(size):
-            print(' ' * size + '*' * size + ' ' * size) 
-        for el in range(size):
+        for _ in range(size):
+            print(' ' * size + '*' * size + ' ' * size)
+        for _ in range(size):
             print('***' * size)
-        for el in range(size):
+        for _ in range(size):
             print(' ' * size + '*' * size + ' ' * size)
 
 if __name__ == '__main__':
